@@ -1,0 +1,9 @@
+# Arquivos gerados pela compilação
+bin/
+obj/
+
+# Configurações locais do Rider / usuário
+.idea/**/workspace.xml
+.idea/**/awsToolkit.xml
+*.DotSettings.user
+*.user

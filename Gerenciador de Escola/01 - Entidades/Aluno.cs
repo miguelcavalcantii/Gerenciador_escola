@@ -1,17 +1,15 @@
 namespace Gerenciador_de_Escola;
 
-public class Aluno
+//Aluno herda nome, email, telefone e cpf de Pessoa
+public class Aluno : Pessoa
 {
     public int matricula { get; set; }
-    public string nome { get; set; }
     public string curso { get; set; }
-    public string email { get; set; }
-    
-    public Aluno(string nome, string curso, string email, int matricula)
+
+    public Aluno(string nome, string email, string telefone, string cpf, int matricula, string curso)
+        : base(nome, email, telefone, cpf)
     {
-        this.nome = nome;
-        this.curso = curso;
-        this.email = email;
         this.matricula = matricula;
+        this.curso = curso;
     }
 }
